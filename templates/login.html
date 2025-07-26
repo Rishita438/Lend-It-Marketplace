@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+</head>
+<body>
+  <h1>Login</h1>
+  {% with msgs = get_flashed_messages(with_categories=true) %}
+    {% for cat, m in msgs %}
+      <p class="{{cat}}">{{ m }}</p>
+    {% endfor %}
+  {% endwith %}
+
+  <form method="post">
+    <label>Email: <input name="email" type="email" required></label><br>
+    <label>Password: <input name="password" type="password" required></label><br>
+    <button type="submit">Login</button>
+  </form>
+  <p><a href="{{ url_for('index') }}">Back</a></p>
+</body>
+</html>

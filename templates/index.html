@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>lendIT Dashboard</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        h1 { color: #333; }
+        .button-group { margin: 10px 0; }
+        .button-group form { display: inline-block; margin-right: 10px; }
+        button { padding: 10px 15px; font-size: 14px; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <h1>lendIT Dashboard</h1>
+    <p>Select a query to run:</p>
+
+    <div class="button-group">
+        <form action="{{ url_for('query_renters') }}" method="get">
+            <button type="submit">Find Renters</button>
+        </form>
+        <form action="{{ url_for('query_rental_pairs') }}" method="get">
+            <button type="submit">Renter-Product-Owner Pairs</button>
+        </form>
+        <form action="{{ url_for('query_products_by_user') }}" method="get">
+            <button type="submit">Count Products by Owner</button>
+        </form>
+        <form action="{{ url_for('query_products_by_user_filtered') }}" method="get">
+            <button type="submit">Owners with >2 Products</button>
+        </form>
+    </div>
+
+    <div class="button-group">
+        <form action="{{ url_for('query_buyers_above_avg') }}" method="get">
+            <button type="submit">Buyers Spending > Average</button>
+        </form>
+        <form action="{{ url_for('query_products_not_rented') }}" method="get">
+            <button type="submit">Products Not Rented</button>
+        </form>
+        <form action="{{ url_for('query_avg_renting_duration') }}" method="get">
+            <button type="submit">Avg Renting Duration</button>
+        </form>
+        <form action="{{ url_for('query_top_revenue') }}" method="get">
+            <button type="submit">Top 5 Revenue Generators</button>
+        </form>
+    </div>
+
+    <div class="button-group">
+        <form action="{{ url_for('query_products_above_avg_price') }}" method="get">
+            <button type="submit">Products Above Category Avg Price</button>
+        </form>
+        <form action="{{ url_for('query_sellers_admins') }}" method="get">
+            <button type="submit">Sellers and Admins</button>
+        </form>
+        <form action="{{ url_for('query_role_specific') }}" method="get">
+            <button type="submit">Role Specific Names</button>
+        </form>
+        <form action="{{ url_for('query_filter_mens_tuxedo') }}" method="get">
+            <button type="submit">Mens Tuxedo Under 1500</button>
+        </form>
+    </div>
+
+    <div class="button-group">
+        <form action="{{ url_for('query_filter_womens_rating') }}" method="get">
+            <button type="submit">Womens Products (Avg Rating ≥ 4)</button>
+        </form>
+        <form action="{{ url_for('query_filter_accessories_cleaned') }}" method="get">
+            <button type="submit">Accessories Cleaned Last Month</button>
+        </form>
+        <form action="{{ url_for('query_sort_products_avg_rating') }}" method="get">
+            <button type="submit">Sort Products by Avg Rating</button>
+        </form>
+        <form action="{{ url_for('query_multifunction_users') }}" method="get">
+            <button type="submit">Multi-functional Users</button>
+        </form>
+    </div>
+
+    <div class="button-group">
+        <form action="{{ url_for('register') }}" method="get">
+            <button type="submit">Register</button>
+        </form>
+        <form action="{{ url_for('login') }}" method="get">
+            <button type="submit">Login</button>
+        </form>
+        <form action="{{ url_for('rent_item') }}" method="get">
+            <button type="submit">Rent an Item</button>
+        </form>
+        <form action="{{ url_for('sort_products_price') }}" method="get">
+            <button type="submit">Sort Products by Price</button>
+        </form>
+    </div>
+
+
+</body>
+</html>
