@@ -52,6 +52,9 @@ To run this project locally, follow these steps:
     ```
     The application will be available at `http://127.0.0.1:5000`.
 
+* **[Customer-Facing Frontend](https://jovial-sfogliatella-e46a00.netlify.app/)**
+* **[Analytics Dashboard](https://preview--rent-it-analytics-dashboard.lovable.app/home)**
+
 ## 🧑‍💻 Team Members
 
 * Vikram Mantri 
