@@ -1,6 +1,6 @@
 # Lend It - Full-Stack Rental Marketplace 🛍️
 
-[cite_start]Lend It is a web-based rental marketplace where users can rent high-value clothing and accessories at an affordable price[cite: 182]. [cite_start]The platform enables individuals to list their products for rent and facilitates seamless transactions, ensuring quality and security[cite: 183].
+Lend It is a web-based rental marketplace where users can rent high-value clothing and accessories at an affordable price. The platform enables individuals to list their products for rent and facilitates seamless transactions, ensuring quality and security.
 
 ![ER Diagram](supabase-schema-vitoforbhyfxkrfmzivv.png)
 
@@ -54,7 +54,7 @@ To run this project locally, follow these steps:
 
 ## 🧑‍💻 Team Members
 
-* [cite_start]Vikram Mantri [cite: 132]
-* [cite_start]Vansh Goyal [cite: 133]
-* [cite_start]Nihal [cite: 134]
-* [cite_start]Rishita Dhankar [cite: 135]
+* Vikram Mantri 
+* Vansh Goyal
+* Nihal 
+* Rishita Dhankhar 
