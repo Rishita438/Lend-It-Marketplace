@@ -55,9 +55,4 @@ To run this project locally, follow these steps:
 * **[Customer-Facing Frontend](https://jovial-sfogliatella-e46a00.netlify.app/)**
 * **[Analytics Dashboard](https://preview--rent-it-analytics-dashboard.lovable.app/home)**
 
-## 🧑‍💻 Team Members
 
-* Vikram Mantri 
-* Vansh Goyal
-* Nihal 
-* Rishita Dhankhar 
